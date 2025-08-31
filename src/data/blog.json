@@ -1,0 +1,148 @@
+{
+    "posts": [
+      {
+        "id": 1,
+        "title": "How to Optimize Images for Web Without Losing Quality",
+        "excerpt": "Learn the best practices for optimizing your images for the web while maintaining visual quality and fast loading times.",
+        "content": "Full content about image optimization techniques...",
+        "category": "tutorials",
+        "author": "John Doe",
+        "date": "2023-06-12",
+        "comments": 15,
+        "link": "blog/how-to-optimize-images.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+SW1hZ2UgT3B0aW1pemF0aW9uPC90ZXh0Pjwvc3ZnPg=="
+      },
+      {
+        "id": 2,
+        "title": "New Tools Added - July 2023 Update",
+        "excerpt": "We've added 5 new utility tools to our collection. Check out what's new and how they can help you.",
+        "content": "Full content about the new tools...",
+        "category": "updates",
+        "author": "Jane Smith",
+        "date": "2023-07-05",
+        "comments": 8,
+        "link": "blog/july-update.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+SnVseSBVcGRhdGU8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 3,
+        "title": "PDF vs DOCX: Which Format is Better for Your Needs?",
+        "excerpt": "A comprehensive comparison between PDF and DOCX formats to help you choose the right one for your specific use case.",
+        "content": "Full content comparing PDF and DOCX...",
+        "category": "tips",
+        "author": "Mike Johnson",
+        "date": "2023-05-18",
+        "comments": 23,
+        "link": "blog/pdf-vs-docx.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1iZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UERGIHZzIERPQ1g8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 4,
+        "title": "The Future of Online File Conversion",
+        "excerpt": "Exploring the emerging trends and technologies that will shape the future of online file conversion tools.",
+        "content": "Full content about the future of file conversion...",
+        "category": "technology",
+        "author": "Sarah Wilson",
+        "date": "2023-08-22",
+        "comments": 12,
+        "link": "blog/future-of-file-conversion.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+RmlsZSBDb252ZXJzaW9uIEZ1dHVyZTwvdGV4dD48L3N2Zz4="
+      },
+      {
+        "id": 5,
+        "title": "10 Productivity Tools You Didn't Know You Needed",
+        "excerpt": "Discover these hidden gem tools that can significantly boost your productivity and streamline your workflow.",
+        "content": "Full content about productivity tools...",
+        "category": "tips",
+        "author": "Alex Chen",
+        "date": "2023-04-10",
+        "comments": 31,
+        "link": "blog/productivity-tools.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UHJvZHVjdGl2aXR5IFRvb2xzPC90ZXh0Pjwvc3ZnPg=="
+      },
+      {
+        "id": 6,
+        "title": "How to Convert PDF to Editable Documents",
+        "excerpt": "Step-by-step tutorial on converting PDF files to editable formats like Word, Excel, and PowerPoint.",
+        "content": "Full tutorial content...",
+        "category": "tutorials",
+        "author": "Emily Rodriguez",
+        "date": "2023-09-03",
+        "comments": 17,
+        "link": "blog/pdf-to-editable.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UERGIFRvIEVkaXRhYmxlPC90ZXh0Pjwvc3ZnPg=="
+      },
+      {
+        "id": 7,
+        "title": "Understanding Different Image Formats: JPEG, PNG, GIF, WebP",
+        "excerpt": "A guide to understanding the differences between popular image formats and when to use each one.",
+        "content": "Full content about image formats...",
+        "category": "tutorials",
+        "author": "David Kim",
+        "date": "2023-03-15",
+        "comments": 28,
+        "link": "blog/image-formats-guide.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaHeaWdodD0iMTAwJSIgZmlsbD0iI2YxZjFmMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMjQiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZpbGw9IiMzMzMiPkltYWdlIEZvcm1hdHM8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 8,
+        "title": "The Rise of AI in Content Creation Tools",
+        "excerpt": "How artificial intelligence is revolutionizing the way we create and edit digital content.",
+        "content": "Full content about AI in content creation...",
+        "category": "technology",
+        "author": "Lisa Thompson",
+        "date": "2023-10-08",
+        "comments": 19,
+        "link": "blog/ai-content-creation.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+QUkgQ29udGVudCBDcmVhdGlvbjwvdGV4dD48L3N2Zz4="
+      },
+      {
+        "id": 9,
+        "title": "How to Secure Your Documents Online",
+        "excerpt": "Best practices for keeping your documents safe and secure when using online tools and converters.",
+        "content": "Full content about document security...",
+        "category": "tips",
+        "author": "Robert Williams",
+        "date": "2023-02-28",
+        "comments": 14,
+        "link": "blog/document-security.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+RG9jdW1lbnQgU2VjdXJpdHk8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 10,
+        "title": "Behind the Scenes: How Our PDF Compression Works",
+        "excerpt": "A technical look at the algorithms and techniques we use to compress PDF files without losing quality.",
+        "content": "Full technical content...",
+        "category": "technology",
+        "author": "Michael Zhang",
+        "date": "2023-11-12",
+        "comments": 9,
+        "link": "blog/pdf-compression-tech.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UERGIENvbXByZXNzaW9uPC90ZXh0Pjwvc3ZnPg=="
+      },
+      {
+        "id": 11,
+        "title": "5 Common Mistakes When Converting Files Online",
+        "excerpt": "Avoid these common pitfalls when using online file conversion tools to get the best results.",
+        "content": "Full content about conversion mistakes...",
+        "category": "tips",
+        "author": "Sophia Martinez",
+        "date": "2023-01-20",
+        "comments": 22,
+        "link": "blog/conversion-mistakes.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+RmlsZSBDb252ZXJzaW9uIE1pc3Rha2VzPC90ZXh0Pjwvc3ZnPg=="
+      },
+      {
+        "id": 12,
+        "title": "August 2023: Server Upgrades and Performance Improvements",
+        "excerpt": "Details about our recent server upgrades and how they improve the performance of our tools.",
+        "content": "Full content about server upgrades...",
+        "category": "updates",
+        "author": "Admin",
+        "date": "2023-08-05",
+        "comments": 6,
+        "link": "blog/august-updates.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAwIiBoZWlnaHQ9IjQwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+U2VydmVyIFVwZ3JhZGVzPC90ZXh0Pjwvc3ZnPg=="
+      }
+    ]
+  }

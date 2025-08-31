@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog | Bonix.icu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/blog.css">
+    <link rel="stylesheet" href="../css/tools.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="./../../index.html">Bonix<span>.icu</span></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="./../../index.html" class="nav-link">Home</a>
+                <a href="tools.html" class="nav-link">Tools</a>
+                <a href="blog.html" class="nav-link active">Blog</a>
+                <a href="shop.html" class="nav-link">Shop</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <div class="nav-close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="blog-header">
+        <div class="container">
+            <h1 data-aos="fade-up">Bonix Blog</h1>
+            <p data-aos="fade-up" data-aos-delay="100">Tips, tutorials, and insights about our tools and technology</p>
+            
+            <!-- Search Box -->
+            <div class="search-box" data-aos="fade-up" data-aos-delay="200">
+                <i class="fas fa-search"></i>
+                <input type="text" id="blog-search" placeholder="Search blog posts...">
+            </div>
+            
+            <!-- Filter Options -->
+            <div class="filter-options" data-aos="fade-up" data-aos-delay="300">
+                <button class="filter-btn active" data-filter="all">All Posts</button>
+                <button class="filter-btn" data-filter="tutorials">Tutorials</button>
+                <button class="filter-btn" data-filter="updates">Updates</button>
+                <button class="filter-btn" data-filter="tips">Tips & Tricks</button>
+                <button class="filter-btn" data-filter="technology">Technology</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Content -->
+    <section class="section blog-content">
+        <div class="container">
+            <div class="blog-layout">
+                <!-- Main Content -->
+                <main class="blog-main">
+                    <div id="blog-posts" class="blog-posts">
+                        <!-- Blog posts will be loaded dynamically from JSON -->
+                    </div>
+                    
+                    <!-- Loading Indicator -->
+                    <div id="loading-indicator" class="loading-indicator">
+                        <div class="spinner"></div>
+                        <p>Loading blog posts...</p>
+                    </div>
+                    
+                    <!-- No Results Message -->
+                    <div id="no-results" class="no-results" style="display: none;">
+                        <i class="fas fa-search"></i>
+                        <h3>No blog posts found</h3>
+                        <p>Try adjusting your search or filter criteria</p>
+                    </div>
+                    
+                    <!-- Pagination -->
+                    <div class="pagination" id="pagination">
+                        <button class="pagination-btn" id="prev-page">Previous</button>
+                        <div class="pagination-numbers" id="pagination-numbers"></div>
+                        <button class="pagination-btn" id="next-page">Next</button>
+                    </div>
+                </main>
+                
+                <!-- Sidebar -->
+                <aside class="blog-sidebar">
+                    <!-- About Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left">
+                        <h3>About Bonix Blog</h3>
+                        <p>Welcome to our blog where we share tutorials, updates, and tips about our utility tools and technology.</p>
+                        <a href="./../../index.html" class="btn btn-outline">Learn More</a>
+                    </div>
+                    
+                    <!-- Categories Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="100">
+                        <h3>Categories</h3>
+                        <ul class="categories-list">
+                            <li><a href="#" data-category="tutorials">Tutorials <span>(8)</span></a></li>
+                            <li><a href="#" data-category="updates">Updates <span>(5)</span></a></li>
+                            <li><a href="#" data-category="tips">Tips & Tricks <span>(12)</span></a></li>
+                            <li><a href="#" data-category="technology">Technology <span>(7)</span></a></li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Popular Posts Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="200">
+                        <h3>Popular Posts</h3>
+                        <div class="popular-posts">
+                            <div class="popular-post">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2YxZjFmMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZpbGw9IiMzMzMiPlBvcHVsYXI8L3RleHQ+PC9zdmc+" alt="Popular Post">
+                                <div>
+                                    <h4><a href="#">How to Optimize Images for Web</a></h4>
+                                    <span>June 12, 2023</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2YxZjFmMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZpbGw9IiMzMzMiPlBvcHVsYXI8L3RleHQ+PC9zdmc+" alt="Popular Post">
+                                <div>
+                                    <h4><a href="#">New Tools Added - July Update</a></h4>
+                                    <span>July 5, 2023</span>
+                                </div>
+                            </div>
+                            <div class="popular-post">
+                                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0iI2YxZjFmMSIvPjx0ZXh0IHg9IjUwJSIgeT0iNTAlIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZpbGw9IiMzMzMiPlBvcHVsYXI8L3RleHQ+PC9zdmc+" alt="Popular Post">
+                                <div>
+                                    <h4><a href="#">PDF vs DOCX: Which is Better?</a></h4>
+                                    <span>May 18, 2023</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Tags Widget -->
+                    <div class="sidebar-widget" data-aos="fade-left" data-aos-delay="300">
+                        <h3>Tags</h3>
+                        <div class="tags-cloud">
+                            <a href="#" class="tag">Tools</a>
+                            <a href="#" class="tag">Tutorial</a>
+                            <a href="#" class="tag">Conversion</a>
+                            <a href="#" class="tag">Images</a>
+                            <a href="#" class="tag">PDF</a>
+                            <a href="#" class="tag">Productivity</a>
+                            <a href="#" class="tag">Web</a>
+                            <a href="#" class="tag">Free</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Newsletter Widget -->
+                    <div class="sidebar-widget newsletter-widget" data-aos="fade-left" data-aos-delay="400">
+                        <h3>Subscribe to Newsletter</h3>
+                        <p>Get the latest updates and tips directly to your inbox</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Your email address" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bonix.icu</h3>
+                    <p>Your one-stop destination for free utility tools.</p>
+                    <div class="social-links">
+                        <a href="https://twitter.com/BonixIcu" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com/BonixIcu" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="./../../index.html">Home</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@bonix.icu">info@bonix.icu</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Remote Team</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Bonix.icu. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/script.js"></script>
+    <script src="../js/blog.js"></script>
+</body>
+</html>

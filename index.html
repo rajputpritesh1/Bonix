@@ -3,555 +3,256 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bonix.icu - Your Digital Tools Hub</title>
+    <title>Bonix.icu | Free Utility Tools</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #4f46e5;
-            --primary-dark: #4338ca;
-            --secondary: #10b981;
-            --dark: #1f2937;
-            --light: #f9fafb;
-            --gray: #9ca3af;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: var(--light);
-            color: var(--dark);
-            line-height: 1.6;
-        }
-        
-        .container {
-            width: 100%;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header Styles */
-        header {
-            background-color: white;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            position: fixed;
-            width: 100%;
-            top: 0;
-            z-index: 100;
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 0;
-        }
-        
-        .logo {
-            font-size: 24px;
-            font-weight: 700;
-            color: var(--primary);
-            text-decoration: none;
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo i {
-            margin-right: 10px;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 30px;
-        }
-        
-        nav ul li a {
-            text-decoration: none;
-            color: var(--dark);
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: var(--primary);
-        }
-        
-        .btn {
-            display: inline-block;
-            padding: 12px 24px;
-            background-color: var(--primary);
-            color: white;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            transition: background-color 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: var(--primary-dark);
-        }
-        
-        .btn-outline {
-            background-color: transparent;
-            border: 2px solid var(--primary);
-            color: var(--primary);
-        }
-        
-        .btn-outline:hover {
-            background-color: var(--primary);
-            color: white;
-        }
-        
-        /* Hero Section */
-        .hero {
-            padding: 160px 0 100px;
-            background: linear-gradient(135deg, #f6f7ff 0%, #eef0ff 100%);
-            text-align: center;
-        }
-        
-        .hero h1 {
-            font-size: 3.5rem;
-            margin-bottom: 20px;
-            color: var(--dark);
-        }
-        
-        .hero p {
-            font-size: 1.25rem;
-            color: var(--gray);
-            max-width: 700px;
-            margin: 0 auto 40px;
-        }
-        
-        /* Features Section */
-        .features {
-            padding: 100px 0;
-            background-color: white;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-        
-        .section-title h2 {
-            font-size: 2.5rem;
-            color: var(--dark);
-            margin-bottom: 20px;
-        }
-        
-        .section-title p {
-            color: var(--gray);
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .feature-card {
-            background-color: var(--light);
-            border-radius: 10px;
-            padding: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-        }
-        
-        .feature-icon {
-            width: 60px;
-            height: 60px;
-            background-color: rgba(79, 70, 229, 0.1);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-bottom: 20px;
-            color: var(--primary);
-            font-size: 24px;
-        }
-        
-        .feature-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 15px;
-        }
-        
-        .feature-card p {
-            color: var(--gray);
-        }
-        
-        /* How It Works */
-        .how-it-works {
-            padding: 100px 0;
-            background-color: #f9fafb;
-        }
-        
-        .steps {
-            display: flex;
-            justify-content: space-between;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .step {
-            text-align: center;
-            flex: 1;
-            padding: 0 20px;
-            position: relative;
-        }
-        
-        .step-number {
-            width: 40px;
-            height: 40px;
-            background-color: var(--primary);
-            color: white;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-weight: 600;
-        }
-        
-        .step:not(:last-child):after {
-            content: '';
-            position: absolute;
-            top: 20px;
-            right: -50%;
-            width: 100%;
-            height: 2px;
-            background-color: var(--primary);
-            z-index: -1;
-        }
-        
-        /* CTA Section */
-        .cta {
-            padding: 100px 0;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            color: white;
-            text-align: center;
-        }
-        
-        .cta h2 {
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-        
-        .cta p {
-            max-width: 600px;
-            margin: 0 auto 40px;
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-        
-        .cta .btn {
-            background-color: white;
-            color: var(--primary);
-        }
-        
-        .cta .btn:hover {
-            background-color: var(--light);
-        }
-        
-        /* Footer */
-        footer {
-            background-color: var(--dark);
-            color: white;
-            padding: 60px 0 30px;
-        }
-        
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-        
-        .footer-column h3 {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: white;
-        }
-        
-        .footer-column ul {
-            list-style: none;
-        }
-        
-        .footer-column ul li {
-            margin-bottom: 10px;
-        }
-        
-        .footer-column ul li a {
-            color: var(--gray);
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-column ul li a:hover {
-            color: white;
-        }
-        
-        .social-links {
-            display: flex;
-            gap: 15px;
-        }
-        
-        .social-links a {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            background-color: rgba(255, 255, 255, 0.1);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        
-        .social-links a:hover {
-            background-color: var(--primary);
-        }
-        
-        .copyright {
-            text-align: center;
-            padding-top: 30px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav ul {
-                margin-top: 20px;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            nav ul li {
-                margin: 0 10px 10px;
-            }
-            
-            .hero h1 {
-                font-size: 2.5rem;
-            }
-            
-            .steps {
-                flex-direction: column;
-                gap: 40px;
-            }
-            
-            .step:not(:last-child):after {
-                display: none;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="src/css/style.css">
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <a href="#" class="logo">
-                <i class="fas fa-tools"></i> Bonix.icu
-            </a>
-            <nav>
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="./tools/tools.html">Tools</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <!-- <li><a href="#">Shop</a></li> -->
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Bonix<span>.icu</span></a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="./src/pages/tools.html" class="nav-link">Tools</a>
+                <a href="./src/pages/blog.html" class="nav-link">Blog</a>
+                <a href="./src/pages/shop.html" class="nav-link">Shop</a>
+                <a href="./src/pages/about.html" class="nav-link">About</a>
+                <a href="./src/pages/contact.html" class="nav-link">Contact</a>
+                <div class="nav-close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Hero Section -->
     <section class="hero">
-        <div class="container">
-            <h1>Simplify Your Digital Tasks</h1>
-            <p>Bonix.icu offers a suite of powerful online tools to make your digital life easier. From media conversion to content creation, we've got you covered.</p>
-            <a href="./tools/tools.html" class="btn">Explore Tools</a>
-            <a href="#" class="btn btn-outline">Learn More</a>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1000">
+            <h1>Welcome to Bonix.icu</h1>
+            <p>Your one-stop destination for free utility tools.</p>
+            <div class="hero-buttons">
+                <a href="#tools" class="btn btn-primary">Explore Tools</a>
+                <a href="blog.html" class="btn btn-secondary">Read Blog</a>
+            </div>
+        </div>
+        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+            <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+QXBwIFByZXZpZXc8L3RleHQ+PC9zdmc+" alt="Utility Tools">
         </div>
     </section>
 
-    <!-- Features Section -->
-    <section class="features">
+    <!-- Tools Overview -->
+    <section id="tools" class="section tools-overview">
         <div class="container">
-            <div class="section-title">
-                <h2>Our Powerful Tools</h2>
-                <p>Discover our collection of handy utilities designed to save you time and effort</p>
-            </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-compress-arrows-alt"></i>
+            <h2 class="section-title" data-aos="fade-up">Our Tools</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Free utilities to simplify your tasks</p>
+            <div class="tools-grid">
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="tool-icon">
+                        <i class="fas fa-tools"></i>
                     </div>
-                    <h3>Image Compressor</h3>
-                    <p>Reduce image file sizes without sacrificing quality. Perfect for websites and social media.</p>
+                    <h3>Tool 1</h3>
+                    <p>Short description of what this tool does.</p>
+                    <a href="tools/tool1.html" class="btn btn-outline">Use Tool</a>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-exchange-alt"></i>
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tool-icon">
+                        <i class="fas fa-calculator"></i>
                     </div>
-                    <h3>PNG to JPEG Converter</h3>
-                    <p>Easily convert PNG images to JPEG format with adjustable quality settings.</p>
+                    <h3>Tool 2</h3>
+                    <p>Short description of what this tool does.</p>
+                    <a href="tools/tool2.html" class="btn btn-outline">Use Tool</a>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="tool-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Tool 3</h3>
+                    <p>Short description of what this tool does.</p>
+                    <a href="tools/tool3.html" class="btn btn-outline">Use Tool</a>
+                </div>
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="tool-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Tool 4</h3>
+                    <p>Short description of what this tool does.</p>
+                    <a href="tools/tool4.html" class="btn btn-outline">Use Tool</a>
+                </div>
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Tool 5</h3>
+                    <p>Short description of what this tool does.</p>
+                    <a href="tools/tool5.html" class="btn btn-outline">Use Tool</a>
+                </div>
+                <div class="tool-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="tool-icon">
                         <i class="fas fa-download"></i>
                     </div>
-                    <h3>File Downloader</h3>
-                    <p>Download videos, images, and other content from various platforms with ease.</p>
+                    <h3>Tool 6</h3>
+                    <p>Short description of what this tool does.</p>
+                    <a href="tools/tool6.html" class="btn btn-outline">Use Tool</a>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-key"></i>
+            </div>
+            <div class="section-cta" data-aos="fade-up">
+                <a href="tools.html" class="btn btn-primary">View All Tools</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Overview -->
+    <section class="section blogs-overview">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Latest Blog Posts</h2>
+            <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Tips, tutorials and industry insights</p>
+            <div class="blog-grid">
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="blog-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTVlNWU1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzY2NiI+QmxvZyBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Blog Post">
                     </div>
-                    <h3>Keyword Generator</h3>
-                    <p>Find the perfect keywords for your content to improve SEO and reach more audience.</p>
+                    <div class="blog-content">
+                        <h3>Blog Post 1</h3>
+                        <p>Short excerpt from the blog post that gives a preview of the content...</p>
+                        <a href="blog/post1.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="blog-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTVlNWU1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzY2NiI+QmxvZyBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Blog Post 2</h3>
+                        <p>Short excerpt from the blog post that gives a preview of the content...</p>
+                        <a href="blog/post2.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+                <article class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="blog-image">
+                        <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZTVlNWU1Ii8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZiddsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzY2NiI+QmxvZyBJbWFnZTwvdGV4dD48L3N2Zz4=" alt="Blog Post">
+                    </div>
+                    <div class="blog-content">
+                        <h3>Blog Post 3</h3>
+                        <p>Short excerpt from the blog post that gives a preview of the content...</p>
+                        <a href="blog/post3.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+            <div class="section-cta" data-aos="fade-up">
+                <a href="blog.html" class="btn btn-primary">View All Posts</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop Overview -->
+    <section class="section shop-overview">
+        <div class="container">
+            <div class="shop-content" data-aos="fade-right">
+                <h2 class="section-title">Shop</h2>
+                <p class="section-subtitle">Check out our latest products and exclusive offers.</p>
+                <p>We offer premium tools, templates, and resources to enhance your productivity.</p>
+                <a href="shop.html" class="btn btn-primary">Visit Shop</a>
+            </div>
+            <div class="shop-image" data-aos="fade-left">
+                <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjlmOWY5Ii8+PGNpcmNsZSBjeD0iMjUwIiBjeT0iMTUwIiByPSI4MCIgZmlsbD0iI2UzZTNlMyIvPjx0ZXh0IHg9IjI1MCIgeT0iMTUwIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTgiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGRvbWluYW50LWJhc2VsaW5lPSJtaWRkbGUiIGZpbGw9IiM2NjYiPlNob3AgSXRlbXM8L3RleHQ+PC9zdmc+" alt="Shop Products">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us -->
+    <section class="section about-us">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">About Us</h2>
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p>We are dedicated to providing free utility tools to help you with your daily tasks. Our mission is to create accessible, user-friendly tools that solve real problems.</p>
+                    <p>Founded in 2023, Bonix.icu has grown to serve thousands of users worldwide with our collection of free utilities.</p>
+                    <a href="about.html" class="btn btn-outline">Learn More</a>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-font"></i>
+                <div class="about-stats" data-aos="fade-left">
+                    <div class="stat">
+                        <h3>50+</h3>
+                        <p>Free Tools</p>
                     </div>
-                    <h3>Caption Generator</h3>
-                    <p>Create engaging Instagram story captions that capture attention and boost engagement.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-file-pdf"></i>
+                    <div class="stat">
+                        <h3>10K+</h3>
+                        <p>Active Users</p>
                     </div>
-                    <h3>PDF Tools</h3>
-                    <p>Compress, merge, split, and convert PDF files with our comprehensive PDF toolkit.</p>
+                    <div class="stat">
+                        <h3>100%</h3>
+                        <p>Free Access</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- How It Works -->
-    <section class="how-it-works">
+    <!-- Contact CTA -->
+    <section class="section contact-cta">
         <div class="container">
-            <div class="section-title">
-                <h2>How It Works</h2>
-                <p>Using our tools is simple and straightforward</p>
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>Have Questions or Feedback?</h2>
+                <p>We'd love to hear from you. Reach out to us for support, suggestions, or collaboration opportunities.</p>
+                <a href="contact.html" class="btn btn-primary">Contact Us</a>
             </div>
-            <div class="steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <h3>Select Tool</h3>
-                    <p>Choose from our wide range of utilities</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <h3>Upload/Input</h3>
-                    <p>Provide your file or input parameters</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <h3>Process</h3>
-                    <p>Let our tools work their magic</p>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <h3>Download</h3>
-                    <p>Get your processed file or result</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="cta">
-        <div class="container">
-            <h2>Ready to Simplify Your Digital Tasks?</h2>
-            <p>Join thousands of satisfied users who are already benefiting from our powerful tools.</p>
-            <a href="./tools/tools.html" class="btn">Get Started For Free</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-column">
+            <div class="footer-content">
+                <div class="footer-section" data-aos="fade-up">
                     <h3>Bonix.icu</h3>
-                    <p>Your all-in-one solution for digital tools and utilities.</p>
+                    <p>Your one-stop destination for free utility tools.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/BonixIcu" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="https://facebook.com/BonixIcu" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
-                <div class="footer-column">
-                    <h3>Tools</h3>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="#">Image Compressor</a></li>
-                        <li><a href="#">PNG to JPEG Converter</a></li>
-                        <li><a href="#">File Downloader</a></li>
-                        <li><a href="#">Keyword Generator</a></li>
-                        <li><a href="#">Caption Generator</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="tools.html">Tools</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="shop.html">Shop</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Company</h3>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Support</h4>
                     <ul>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Service</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h3>Support</h3>
+                <div class="footer-section" data-aos="fade-up" data-aos-delay="300">
+                    <h4>Contact Info</h4>
                     <ul>
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Privacy Policy</a></li>
-                        <li><a href="#">Terms of Service</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:info@bonix.icu">info@bonix.icu</a></li>
+                        <li><i class="fas fa-map-marker-alt"></i> Remote Team</li>
                     </ul>
                 </div>
             </div>
-            <div class="copyright">
+            <div class="footer-bottom">
                 <p>&copy; 2025 Bonix.icu. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <script>
-        // Simple JavaScript for header scroll effect
-        window.addEventListener('scroll', function() {
-            const header = document.querySelector('header');
-            if (window.scrollY > 50) {
-                header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
-            } else {
-                header.style.boxShadow = '0 2px 10px rgba(0, 0, 0, 0.1)';
-            }
-        });
-    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,112 @@
+{
+    "tools": [
+      {
+        "id": 1,
+        "name": "PNG to JPG Converter",
+        "description": "Convert PNG images to JPG format with adjustable quality settings.",
+        "category": "converter",
+        "status": "coming-soon",
+        "link": "../tools/png-to-jpg.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UE5HIHRvIEpQRzwvdGV4dD48L3N2Zz4="
+      },
+      {
+        "id": 2,
+        "name": "Image Compressor",
+        "description": "Reduce image file size without noticeable quality loss. Perfect for web optimization.",
+        "category": "image",
+        "status": "coming-soon",
+        "link": "../tools/image-compressor.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+SW1hZ2UgQ29tcHJlc3NvcjwvdGV4dD48L3N2Zz4="
+      },
+      {
+        "id": 3,
+        "name": "PDF Merger",
+        "description": "Combine multiple PDF files into a single document with drag and drop interface.",
+        "category": "converter",
+        "status": "coming-soon",
+        "link": "../tools/pdf-merger.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UERGIE1lcmdlcjwvdGV4dD48L3N2Zz4="
+      },
+      {
+        "id": 4,
+        "name": "Text to Speech",
+        "description": "Convert written text into natural sounding audio with multiple voice options.",
+        "category": "text",
+        "status": "coming-soon",
+        "link": "#",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+VGV4dCB0byBTcGVlY2g8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 5,
+        "name": "QR Code Generator",
+        "description": "Create custom QR codes for URLs, contact information, or any text content.",
+        "category": "text",
+        "status": "coming-soon",
+        "link": "../tools/qr-generator.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UVIgQ29kZSBHZW5lcmF0b3I8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 6,
+        "name": "Password Generator",
+        "description": "Create strong, secure passwords with customizable length and character sets.",
+        "category": "text",
+        "status": "coming-soon",
+        "link": "../tools/password-generator.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+UGFzc3dvcmQgR2VuZXJhdG9yPC90ZXh0Pjwvc3ZnPg=="
+      },
+      {
+        "id": 7,
+        "name": "Unit Converter",
+        "description": "Convert between different units of measurement: length, weight, temperature, and more.",
+        "category": "converter",
+        "status": "coming-soon",
+        "link": "../tools/unit-converter.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+VW5pdCBDb252ZXJ0ZXI8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 8,
+        "name": "Color Picker",
+        "description": "Select colors from a palette or using eyedropper tool, with HEX, RGB and HSL values.",
+        "category": "image",
+        "status": "coming-soon",
+        "link": "#",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+Q29sb3IgUGlja2VyPC90ZXh0Pjwvc3ZnPg=="
+      },
+      {
+        "id": 9,
+        "name": "File Format Converter",
+        "description": "Convert between various file formats: documents, images, audio, and more.",
+        "category": "converter",
+        "status": "coming-soon",
+        "link": "../tools/file-converter.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+RmlsZSBDb252ZXJ0ZXI8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 10,
+        "name": "Text Extractor from Images",
+        "description": "Extract text from images using OCR (Optical Character Recognition) technology.",
+        "category": "text",
+        "status": "coming-soon",
+        "link": "#",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+T0NSIFRvb2w8L3RleHQ+PC9zdmc+"
+      },
+      {
+        "id": 11,
+        "name": "Video Compressor",
+        "description": "Reduce video file size while maintaining quality for easier sharing and storage.",
+        "category": "converter",
+        "status": "coming-soon",
+        "link": "#",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+VmlkZW8gQ29tcHJlc3NvcjwvdGV4dD48L3N2Zz4="
+      },
+      {
+        "id": 12,
+        "name": "MP3 Cutter",
+        "description": "Trim and cut MP3 audio files to create ringtones or extract specific parts.",
+        "category": "converter",
+        "status": "coming-soon",
+        "link": "../tools/mp3-cutter.html",
+        "image": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjFmMWYxIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxOCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZG9taW5hbnQtYmFzZWxpbmU9Im1pZGRsZSIgZmlsbD0iIzMzMyI+TVAzIEN1dHRlcjwvdGV4dD48L3N2Zz4="
+      }
+    ]
+  }
